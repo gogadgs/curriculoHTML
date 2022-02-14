@@ -1,0 +1,417 @@
+    /*reset formatação dos navegadores*/
+
+    body {
+        width: 0% 0% 2% 0%;
+        background: lightblue;
+        display: flex;
+        /*corpo do curriculo no meio*/
+        min-height: 100%;
+        flex: 1 1 0;
+        /* minimo de altura 100vh que é bem no meio*/
+    }
+
+    /*limpar quaisquer formatação de link da tag a do site*/
+
+    a {
+        text-decoration: none;
+    }
+
+    ul li {
+        color: #fff;
+        font-weight: 300;
+        font-family: Arial;
+        list-style: none;
+        margin-left: 5px;
+    }
+
+    p {
+        color: #333;
+        font-family: arial, sans-serif;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 1px;
+        text-align: justify;
+    }
+
+    /*reset*/
+
+    * {
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+    }
+
+    /*conteudos*/
+
+    #main-container {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    #address-container,
+    #form-container {
+        flex: 1 1 0;
+    }
+
+    .conteudo {
+        position: relative;
+        width: 100%;
+        max-width: 70%;
+        /*máximo de largura na tela */
+        min-height: 90%;
+        /* mínimo de altura na tela*/
+        background: #fff;
+        margin: 5% 15% 5% 15%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1)
+    }
+
+    .conteudo .esquerda_lado {
+        position: relative;
+        background: #003147;
+        padding: 40px 40px 40px;
+        padding: transparent;
+    }
+
+    .perfil {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+            /*linha tracejada abaixo da profissão exercida*/
+    }
+
+    .perfil .imagem {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        /*esconder a volta da foto e dar foco no rosto*/
+    }
+
+    .perfil .imagem img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /*ajustar o objeto ou a imagem de acordo com os parametros redefinidos acima*/
+    }
+
+    .perfil h2 {
+        color: #fff;
+        font-size: 18px;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 600;
+        line-height: 1.4em;
+    }
+
+    .perfil h2 span {
+        font-size: 0.8em;
+        font-weight: 300;
+    }
+
+    .conteudo .direita_lado {
+        background: #003147;
+        padding: 40px 40px 40px;
+        padding: transparent;
+        position: relative;
+        background: #fff;
+        padding: 40px;
+        float: left;
+        margin: auto;
+    }
+
+    .infocontato {
+        padding-top: 40px;
+
+
+    }
+
+    .titulo {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .infocontato ul {
+        position: flex;
+    }
+
+    .infocontato ul li {
+        position: relative;
+        list-style: none;
+        margin: 0px 0px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    .infocontato ul li .icone {
+        display: inline-block;
+        margin-left: -50px;
+        width: 30px;
+        font-size: 18px;
+        color: #03a9f4;
+    }
+
+    .infocontato ul li spam {
+        color: #fff;
+        font-weight: 300;
+        font-family: Arial;
+        margin-left: 15px;
+    }
+
+
+
+    .infocontato.formação li {
+        margin-bottom: 15px;
+        color: #fff;
+        position: relative;
+        float: left;
+    }
+
+    .infocontato .texto a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .infocontato.formação h5 {
+        color: #03a9f4;
+        font: weight 500px;
+    }
+
+    .infocontato.formação h4:nth-child(2) {
+        color: #fff;
+        font-weight: 500px;
+    }
+
+    .infocontato.formação h4 {
+        color: #fff;
+        font-weight: 300px;
+    }
+
+    .infocontato.formação .icone img {
+        position: relative;
+        width: 500%;
+        margin-left: 30px;
+    }
+
+    .infocontato.linguagem .grau {
+        position: relative;
+        width: 100%;
+        height: 6px;
+        background: #081921;
+        display: block;
+        margin-top: 5px;
+    }
+
+    .infocontato.linguagem .grau div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: #03a9f4;
+    }
+
+    /*formatando lugar das bandeiras*/
+
+    .infocontato.linguagem img {
+        margin-left: -10px;
+        float: left;
+        margin-bottom: -10px;
+        height: auto;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .personalidade {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .personalidade:last-child {
+        margin-bottom: 0px;
+    }
+
+    .titulo2 {
+        color: #003147;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .direita_lado h5 {
+        text-align: center;
+        font-family: arial;
+        margin-left: auto;
+    }
+
+    .empresa .anos spam img {
+        position: relative;
+        width: -100%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: block;
+    }
+
+    .personalidade .empresa {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0;
+    }
+
+    .personalidade.empresa .anos {
+        min-width: 100px;
+    }
+
+    .empresa h4 {
+        text-align: center;
+    }
+
+    .habilidades .grau {
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 150px 2fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .habilidades .formatação h4 {
+        text-transform: uppercase;
+        color: #848c99;
+        font-weight: 500;
+        margin-left: 30px;
+    }
+
+    .habilidades .formatação .grau {
+        position: relative;
+        width: 90%;
+        height: 10px;
+        left: 30px;
+        bottom: 20px;
+        background-color: #f0f0f0;
+    }
+
+    .habilidades .formatação .grau div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: #03a9f4;
+    }
+
+    .interesse ul {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .interesse ul li .fa {
+        display: inline-block;
+        margin-left: -40px;
+        width: 30px;
+        font-size: 18px;
+        color: #03a9f4;
+    }
+
+    .interesse ul li {
+        list-style: none;
+        color: #fff;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+
+    .interesse ul li fa {
+        color: #03a9f4;
+        font-size: 18px;
+        width: 20px;
+    }
+
+    .interesse ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /*formatação para dispositivos mobiles e impressão*/
+
+    @media (max-width:1132px) {
+        .conteudo {
+            align-items: center;
+            margin: 15px;
+            grid-template-columns: repeat(1, 2fr);
+        }
+
+        .interesse ul {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width:600px) {
+            .personalidade .empresa {
+                flex-direction: column;
+                margin-bottom: 5px;
+            }
+
+            .personalidade .empresa .anos {
+                margin-bottom: 5px;
+            }
+
+            .interesse ul {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .interesse .titulo {
+                grid-template-columns: repeat(1, 1fr)
+            }
+        }
+
+        /*impressao do curriculo em 50% scala para caber em uma página*/
+        @media print {
+            body .conteudo {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                zoom: 51.8%;
+                margin-left: 15%;
+                margin-top: 0;
+                width: 100%;
+                height: 100%;
+
+            }
+
+            .conteudo .esquerda_lado {
+
+                width: 100%;
+                height: 100%;
+                margin-top: auto;
+                line-height: 1rem;
+                ;
+            }
+
+            .infocontato {
+
+                line-height: 1rem;
+
+            }
+
+            .conteudo .direita_lado {
+
+                width: 100%;
+                height: 100%;
+                margin-top: auto;
+            }
+
+
+            spam .texto a {
+                margin-top: auto;
+
+            }
+        }
+    }
